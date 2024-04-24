@@ -33,6 +33,18 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/rbac-0.0.1/rbac-0.0.1.tgz
     version: 0.0.1
+  s2i:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-24T15:53:21.508860905Z"
+    description: Creates an image stream from a Docker file in github and run that
+      app with route exposed. Also creates a shortcut link in console 9box.
+    digest: 3508cf9c89234ebd544806256d9ca8112172d6e578059d3a6c3a1528795a1303
+    name: s2i
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/s2i-0.0.2/s2i-0.0.2.tgz
+    version: 0.0.2
   workbench:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -44,4 +56,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/workbench-0.0.1/workbench-0.0.1.tgz
     version: 0.0.1
-generated: "2024-04-24T15:23:37.175791797Z"
+generated: "2024-04-24T15:53:21.508871154Z"

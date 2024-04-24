@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  blank:
+  - apiVersion: v2
+    created: "2023-10-05T16:14:49.678487+11:00"
+    description: An empty Helm chart
+    digest: 526eac5266cce78f81b84a4507b4eb8fa1e884997cc816d373524a4e46eabb56
+    keywords:
+    - pattern
+    name: blank
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
+    version: 0.0.1

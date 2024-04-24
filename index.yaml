@@ -11,6 +11,28 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
     version: 0.0.1
+  operators:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-24T15:23:37.054043221Z"
+    description: A Helm chart for Kubernetes
+    digest: cc6d4da794091bb989b463d98909dddeee20bf616da6ef0d9b3ca3d577bde22f
+    name: operators
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/operators-0.0.1/operators-0.0.1.tgz
+    version: 0.0.1
+  rbac:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-24T15:23:37.175780927Z"
+    description: A Helm chart that provisions service accounts, roles and rolebindings
+    digest: c4f38e522fa798f2412cae9682c3fdceaed6bbf8740e48c6a0840d48841942ed
+    name: rbac
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/rbac-0.0.1/rbac-0.0.1.tgz
+    version: 0.0.1
   workbench:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -22,4 +44,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/workbench-0.0.1/workbench-0.0.1.tgz
     version: 0.0.1
-generated: "2024-04-24T15:02:47.202809914Z"
+generated: "2024-04-24T15:23:37.175791797Z"

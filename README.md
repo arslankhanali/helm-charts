@@ -48,7 +48,7 @@ In gh-pages branch: index.yaml file will be automatically updated and new tar re
 
 # Helm Chart Repository
 
-[rbac](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/rbac)
+[rbac](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/rbac)  
 [s2i](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/s2i)
 
 ## Usage

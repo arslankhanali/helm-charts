@@ -1,0 +1,18 @@
+operators:
+  servicemesh: true
+  serverless: true
+  pipelines: true
+  odf : true
+  nvidia-gpu-operator: true
+  nfd: true
+  codeflare: false
+  rhoai: true
+
+crds:
+  rhoai-dsc: true
+  nfd-nfd: true
+  nvidia-clusterpolicy: true
+  odf-storagesystem: true
+
+app:
+  minio: true

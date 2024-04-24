@@ -1,9 +1,6 @@
 # Chart Release cr
 Instructions here: https://github.com/helm/chart-releaser
 
-
-# 
-
 #### Installation
 ``` sh
 cd /tmp
@@ -18,7 +15,6 @@ git commit -m "pages braanch added"
 git push --set-upstream origin gh-pages
 
 vim .github/workflows/release.yaml       
-
 
 git checkout gh-pages
 
@@ -40,7 +36,7 @@ git add .
 git commit -am "New Release"
 git push
 
-cr package charts/s2i
+cr package charts/*
 cr upload  --config $HOME/.cr.yaml --push --skip-existing
 cr index   --config $HOME/.cr.yaml --push
 

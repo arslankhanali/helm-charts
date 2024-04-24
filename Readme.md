@@ -1,5 +1,3 @@
-# [My Helm Charts](https://github.com/arslankhanali/helm-charts/tree/main/charts)
-
 Welcome to the GitHub Pages branch for My Helm Charts repository! This repository hosts Helm charts that you can use to deploy applications and services on Kubernetes clusters.
 
 ## Usage
@@ -30,10 +28,10 @@ For more information on Helm and how to use it, refer to the [Helm documentation
 
 ## [Available Charts](https://github.com/arslankhanali/helm-charts/tree/main/charts)
 
-- [Chart Name 1](charts/operators): Description of Chart operators.
-- [Chart Name 2](charts/workbench): Description of Chart workbench.
-- [Chart Name 3](charts/rbac): Description of Chart rbac.
-- [Chart Name 3](charts/s2i): Description of Chart s2i.
+- [operators](https://github.com/arslankhanali/helm-charts/tree/main/charts/operators): Install operators on Red Hat OpenShift
+- [workbench](https://github.com/arslankhanali/helm-charts/tree/main/charts/workbench): Create a workbench in Red Hat OpenShift AI
+- [rbac](https://github.com/arslankhanali/helm-charts/tree/main/charts/rbac): Create a role and rb
+- [s2i](https://github.com/arslankhanali/helm-charts/tree/main/charts/s2i): Deploy a pod from a source
 
 ## Contributing
 

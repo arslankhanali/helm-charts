@@ -15,15 +15,15 @@
 Install helm on your machine using the [official docs](https://helm.sh/docs/intro/install/)
 
 ```shell
-helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
+helm repo add arslan https://arslankhanali.github.io/helm-charts/
 helm repo update
-helm search repo rc-helm-charts
+helm search repo arslan
 
-helm install rbac-1 rc-helm-charts/rbac
+helm install llm arslan/operators
 
 helm list 
 
-helm uninstall rbac-1
+helm uninstall llm
 ```
 
 

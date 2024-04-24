@@ -11,3 +11,15 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
     version: 0.0.1
+  workbench:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-24T15:02:47.202796419Z"
+    description: A Helm chart for Kubernetes
+    digest: a07fef82aa965e4b55d8c14b2617d124bb0c6574d8184ce3b58ba7861d7f71e1
+    name: workbench
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/workbench-0.0.1/workbench-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-04-24T15:02:47.202809914Z"

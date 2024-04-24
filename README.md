@@ -1,55 +1,14 @@
 # Chart Release cr
-Instructions here: https://github.com/helm/chart-releaser
-
-#### Installation
-``` sh
-cd /tmp
-curl -sSL https://github.com/helm/chart-releaser/releases/download/v1.6.0/chart-releaser_1.6.0_darwin_amd64.tar.gz | tar xzf -
-mv cr ~/bin/cr
-```
-
-#### Create pages branch
-``` sh
-git checkout --orphan gh-pages
-git commit -m "pages braanch added"
-git push --set-upstream origin gh-pages
-
-vim .github/workflows/release.yaml       
-
-git checkout gh-pages
-
-cr package charts/{rbac,other}
-```
-#### cat $HOME/.cr.yaml
-``` sh
-owner: arslankhanali
-git-repo: rc-helm-charts
-index-path: .
-token: <>
-```
-#### For new charts and release
-In main branch
-``` sh
-# Upload new release in .cr-release-packages/
-cd Codes/rc-helm-charts
-git add .
-git commit -am "New Release"
-git push
-
-cr package charts/*
-cr upload  --config $HOME/.cr.yaml --push --skip-existing
-cr index   --config $HOME/.cr.yaml --push
-
-
-```
-In gh-pages branch: index.yaml file will be automatically updated and new tar release will be uploaded.
-
-# Home
-
-# Helm Chart Repository
-
-[rbac](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/rbac)  
-[s2i](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/s2i)
+1. In `main` branch
+   1. `.github/workflows/release.yaml`: create with [default](https://github.com/marketplace/actions/helm-chart-releaser#example-workflow)
+   2. `charts`: Place charts in this directory
+   3. `Readme`:
+2. In `gh-pages` branch
+   1. `git checkout -b gh-pages`: Create Branch
+   2. Select `gh-pages` as branch in [pages settings](https://github.com/arslankhanali/helm-charts/settings/pages)
+   3. `touch index.yaml`: Create file and fill with sample text. sample given at the end
+   4. `Readme.md`: This readme will be rendered on [page](https://arslankhanali.github.io/helm-charts/)
+3. `**Automatic release**`: Each time a `new chart` is added or a version of an old chart is `changed` in `main branch`. A workflow will run and create a `new release` of the chart and packages it up. It also updates the `index.yaml` in `gh-pages branch`
 
 ## Usage
 
@@ -65,4 +24,22 @@ helm install rbac-1 rc-helm-charts/rbac
 helm list 
 
 helm uninstall rbac-1
+```
+
+
+### index.yaml sample
+```yml
+apiVersion: v1
+entries:
+  blank:
+  - apiVersion: v2
+    created: "2023-10-05T16:14:49.678487+11:00"
+    description: An empty Helm chart
+    digest: 526eac5266cce78f81b84a4507b4eb8fa1e884997cc816d373524a4e46eabb56
+    keywords:
+    - pattern
+    name: blank
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
+    version: 0.0.1
 ```

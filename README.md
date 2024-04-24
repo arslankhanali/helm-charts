@@ -1,4 +1,20 @@
-# Chart Release cr
+## Usage
+[Install](https://helm.sh/docs/intro/install/) helm on your machine.  
+`brew install helm`
+```shell
+helm repo add arslan https://arslankhanali.github.io/helm-charts/
+
+helm repo update
+
+helm search repo arslan
+
+helm install llm arslan/operators
+
+helm list 
+
+helm uninstall llm
+```
+### Chart Release cr
 1. In `main` branch
    1. `.github/workflows/release.yaml`: create with [default](https://github.com/marketplace/actions/helm-chart-releaser#example-workflow)
    2. `charts`: Place charts in this directory
@@ -9,23 +25,6 @@
    3. `touch index.yaml`: Create file and fill with sample text. sample given at the end
    4. `Readme.md`: This readme will be rendered on [page](https://arslankhanali.github.io/helm-charts/)
 3. `**Automatic release**`: Each time a `new chart` is added or a version of an old chart is `changed` in `main branch`. A workflow will run and create a `new release` of the chart and packages it up. It also updates the `index.yaml` in `gh-pages branch`
-
-## Usage
-
-Install helm on your machine using the [official docs](https://helm.sh/docs/intro/install/)
-
-```shell
-helm repo add arslan https://arslankhanali.github.io/helm-charts/
-helm repo update
-helm search repo arslan
-
-helm install llm arslan/operators
-
-helm list 
-
-helm uninstall llm
-```
-
 
 ### index.yaml sample
 ```yml

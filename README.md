@@ -1,6 +1,7 @@
 ## Usage
 [Install](https://helm.sh/docs/intro/install/) helm on your machine.  
-`brew install helm`
+`brew install helm`  
+
 ```shell
 helm repo add arslan https://arslankhanali.github.io/helm-charts/
 

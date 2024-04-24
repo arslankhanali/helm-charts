@@ -1,6 +1,9 @@
 # Chart Release cr
 Instructions here: https://github.com/helm/chart-releaser
 
+
+# 
+
 #### Installation
 ``` sh
 cd /tmp
@@ -11,6 +14,12 @@ mv cr ~/bin/cr
 #### Create pages branch
 ``` sh
 git checkout --orphan gh-pages
+git commit -m "pages braanch added"
+git push --set-upstream origin gh-pages
+
+vim .github/workflows/release.yaml       
+
+
 git checkout gh-pages
 
 cr package charts/{rbac,other}

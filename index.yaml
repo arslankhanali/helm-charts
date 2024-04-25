@@ -11,3 +11,38 @@ entries:
     urls:
     - https://github.com/arslankhanali/helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
     version: 0.0.1
+  operators:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-25T07:54:32.304342596Z"
+    description: A Helm chart for Kubernetes
+    digest: 5e20726b4e2bc458e82ed58deff5100ff9da0e3667ebd08b45c0ae34844648c2
+    name: operators
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/operators-0.0.1/operators-0.0.1.tgz
+    version: 0.0.1
+  s2i:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-25T07:54:32.384845119Z"
+    description: Creates an image stream from a Docker file in github and run that
+      app with route exposed. Also creates a shortcut link in console 9box.
+    digest: 36cb8d4b05bb02ede3234585acf6d54cb39fd9e05046b332da502e09ab6e0614
+    name: s2i
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/s2i-0.0.1/s2i-0.0.1.tgz
+    version: 0.0.1
+  workbench:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-25T07:54:32.474600948Z"
+    description: A Helm chart for Kubernetes
+    digest: d86132ca7cdbf1ecfdfe9e225a2ea506e0c0024eda86537b9ca881d003b62270
+    name: workbench
+    type: application
+    urls:
+    - https://github.com/arslankhanali/helm-charts/releases/download/workbench-0.0.1/workbench-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-04-25T07:54:32.474608633Z"

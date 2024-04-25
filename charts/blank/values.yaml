@@ -13,3 +13,6 @@ crds:
   nfd-nfd: true
   nvidia-clusterpolicy: true
   odf-storagesystem: true
+
+app:
+  minio: true

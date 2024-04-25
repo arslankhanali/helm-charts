@@ -31,16 +31,10 @@ oauthProxyImage: registry.redhat.io/openshift4/ose-oauth-proxy@sha256:4bef31eb99
 #Dataconnection
 secretName: llm
 secretType: Opaque
-# secretdata:
-#   AWS_ACCESS_KEY_ID: <Make sure its in base64>
-#   AWS_DEFAULT_REGION: None <Make sure its in base64>
-#   AWS_S3_BUCKET: llm-f581de61-4899-4a71-a72c-390dabd14501 <Make sure its in base64>
-#   AWS_S3_ENDPOINT: http://s3.openshift-storage.svc:80 <Make sure its in base64>
-#   AWS_SECRET_ACCESS_KEY: /1bHgvAW2LaL+XpNxxHBpAG9zonFDr2RO14OXfQQ <Make sure its in base64>
-
-secretdata:
-  AWS_ACCESS_KEY_ID: YWxCWU9KamNZMm5zN0FaWUxwSTY=
+secretdata: # All below should be in base64: echo "notarealsecret" | base64 \n echo "bm90YXJlYWxzZWNyZXQK" | base64 --decode 
+  AWS_ACCESS_KEY_ID: bm90YXJlYWxzZWNyZXQK
+  AWS_SECRET_ACCESS_KEY: bm90YXJlYWxzZWNyZXQK
+  AWS_S3_BUCKET: bm90YXJlYWxzZWNyZXQK
+  AWS_S3_ENDPOINT: aHR0cDovL3MzLm9wZW5zaGlmdC1zdG9yYWdlLnN2Yzo4MAo=
   AWS_DEFAULT_REGION: Tm9uZQ==
-  AWS_S3_BUCKET: bGxtLWY1ODFkZTYxLTQ4OTktNGE3MS1hNzJjLTM5MGRhYmQxNDUwMQ==
-  AWS_S3_ENDPOINT: aHR0cDovL3MzLm9wZW5zaGlmdC1zdG9yYWdlLnN2Yzo0NDM=
-  AWS_SECRET_ACCESS_KEY: LzFiSGd2QVcyTGFMK1hwTnh4SEJwQUc5em9uRkRyMlJPMTRPWGZRUQ==
+

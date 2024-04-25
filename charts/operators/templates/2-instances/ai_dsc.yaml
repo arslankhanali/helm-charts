@@ -1,4 +1,4 @@
-{{- if .Values.crds.rhoai-dsc }}
+{{- if .Values.crds.rhoaidsc }}
 ---
 apiVersion: datasciencecluster.opendatahub.io/v1
 kind: DataScienceCluster

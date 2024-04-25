@@ -3,13 +3,13 @@ operators:
   serverless: true
   pipelines: true
   odf : true
-  nvidia-gpu-operator: true
+  nvidiagpuoperator: true
   nfd: true
   codeflare: false
   rhoai: true
 
 crds:
-  rhoai-dsc: true
-  nfd-nfd: true
-  nvidia-clusterpolicy: true
-  odf-storagesystem: true
+  rhoaidsc: true
+  nfdnfd: true
+  nvidiaclusterpolicy: true
+  odfstoragesystem: true

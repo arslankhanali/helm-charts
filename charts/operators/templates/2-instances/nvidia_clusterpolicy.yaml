@@ -1,4 +1,4 @@
-{{- if .Values.crds.nvidia-clusterpolicy }}
+{{- if .Values.crds.nvidiaclusterpolicy }}
 ---
 apiVersion: nvidia.com/v1
 kind: ClusterPolicy

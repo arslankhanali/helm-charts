@@ -1,4 +1,4 @@
-{{- if .Values.crds.nfd-nfd }}
+{{- if .Values.crds.nfdnfd }}
 ---
 apiVersion: nfd.openshift.io/v1
 kind: NodeFeatureDiscovery

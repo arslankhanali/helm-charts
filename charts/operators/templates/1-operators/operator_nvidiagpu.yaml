@@ -1,4 +1,4 @@
-{{- if .Values.operators.nvidia-gpu-operator }}
+{{- if .Values.operators.nvidiagpuoperator }}
 apiVersion: v1
 kind: Namespace
 metadata:

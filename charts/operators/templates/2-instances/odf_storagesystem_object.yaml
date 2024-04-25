@@ -1,5 +1,4 @@
-# Create both storagesystem and storagecluster(MCG Noobaa only)
-{{- if .Values.crds.odf-storagesystem }}
+{{- if .Values.crds.odfstoragesystem }}
 ---
 apiVersion: odf.openshift.io/v1alpha1
 kind: StorageSystem
